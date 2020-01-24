@@ -5,6 +5,7 @@
 //  Created by AARON KORN on 1/24/20.
 //  Copyright © 2020 Aaron KoRn. All rights reserved.
 //
+//  Tinkering with new core data schema
 
 import SwiftUI
 
