@@ -39,6 +39,7 @@
 		8113544F23DC21EB00C90A20 /* Icon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113544D23DC21EB00C90A20 /* Icon+CoreDataProperties.swift */; };
 		8113545123DC25A300C90A20 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113545023DC25A300C90A20 /* TransactionListView.swift */; };
 		8113545323DC85EE00C90A20 /* CoreDataEntityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113545223DC85EE00C90A20 /* CoreDataEntityListView.swift */; };
+		8113545523DC8BF900C90A20 /* IconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113545423DC8BF900C90A20 /* IconListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		8113544D23DC21EB00C90A20 /* Icon+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Icon+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8113545023DC25A300C90A20 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
 		8113545223DC85EE00C90A20 /* CoreDataEntityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEntityListView.swift; sourceTree = "<group>"; };
+		8113545423DC8BF900C90A20 /* IconListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				8113543523DBFAA900C90A20 /* JournalListView.swift */,
+				8113545423DC8BF900C90A20 /* IconListView.swift */,
 				8113545023DC25A300C90A20 /* TransactionListView.swift */,
 				8113544523DC198000C90A20 /* AccountListView.swift */,
 				8113544323DC136E00C90A20 /* BudgetListView.swift */,
@@ -265,6 +268,7 @@
 				8113540123DB9D0E00C90A20 /* ContentView.swift in Sources */,
 				811353FC23DB9D0E00C90A20 /* SceneDelegate.swift in Sources */,
 				8113542C23DBF95F00C90A20 /* Payment+CoreDataClass.swift in Sources */,
+				8113545523DC8BF900C90A20 /* IconListView.swift in Sources */,
 				8113544A23DC20CE00C90A20 /* Transaction+CoreDataClass.swift in Sources */,
 				8113543323DBF95F00C90A20 /* Budget+CoreDataProperties.swift in Sources */,
 				8113542423DBF95F00C90A20 /* RepeatInterval+CoreDataClass.swift in Sources */,
