@@ -35,14 +35,14 @@
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="accounts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="icon" inverseEntity="Account"/>
-        <relationship name="budgets" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Budget" inverseName="icon" inverseEntity="Budget"/>
-        <relationship name="categories" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="icon" inverseEntity="Category"/>
-        <relationship name="journals" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Journal" inverseName="icon" inverseEntity="Journal"/>
-        <relationship name="payments" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Payment" inverseName="icon" inverseEntity="Payment"/>
-        <relationship name="repeatIntervals" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RepeatInterval" inverseName="icon" inverseEntity="RepeatInterval"/>
-        <relationship name="transactionEntries" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TransactionEntry" inverseName="icon" inverseEntity="TransactionEntry"/>
-        <relationship name="transactions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transaction" inverseName="icon" inverseEntity="Transaction"/>
+        <relationship name="accounts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Account" inverseName="icon" inverseEntity="Account"/>
+        <relationship name="budgets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Budget" inverseName="icon" inverseEntity="Budget"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Category" inverseName="icon" inverseEntity="Category"/>
+        <relationship name="journals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Journal" inverseName="icon" inverseEntity="Journal"/>
+        <relationship name="payments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Payment" inverseName="icon" inverseEntity="Payment"/>
+        <relationship name="repeatIntervals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RepeatInterval" inverseName="icon" inverseEntity="RepeatInterval"/>
+        <relationship name="transactionEntries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TransactionEntry" inverseName="icon" inverseEntity="TransactionEntry"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="icon" inverseEntity="Transaction"/>
     </entity>
     <entity name="Journal" representedClassName="Journal" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>

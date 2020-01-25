@@ -13,4 +13,4 @@ import CoreData
 @objc(Icon)
 public class Icon: NSManagedObject {
 
-}
+}//Icon
