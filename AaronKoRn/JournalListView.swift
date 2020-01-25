@@ -1,5 +1,5 @@
 //
-//  ListJournalView.swift
+//  JournalListView.swift
 //  CoreData200124
 //
 //  Created by AARON KORN on 1/24/20.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ListJournalView: View {
+struct JournalListView: View {
   
   @Environment(\.managedObjectContext) var moc
   
@@ -71,10 +71,10 @@ struct ListJournalView: View {
   func actionJournal() {
     print("\(#file): ...")
   }//actionJournal
-}//ListJournalView
+}//JournalListView
 
-struct ListJournalView_Previews: PreviewProvider {
+struct JournalListView_Previews: PreviewProvider {
   static var previews: some View {
-    ListJournalView()
+    JournalListView()
   }
-}//ListJournalView_Previews
+}//JournalListView_Previews

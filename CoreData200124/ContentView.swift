@@ -17,15 +17,15 @@ struct ContentView: View {
   
   var body: some View {
     TabView(selection: $selectedView) {
-      ListJournalView()
+      JournalListView()
         .tabItem {
           Image(systemName: "1.circle")
-          Text("First")
+          Text("Journal")
       }.tag(0)
-      ListJournalView()
+      CategoryListView()
         .tabItem {
           Image(systemName: "2.circle")
-          Text("Second")
+          Text("Category")
       }.tag(1)
     }//TabView
       .onAppear(perform: actionContentView)
