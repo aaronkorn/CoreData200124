@@ -40,6 +40,7 @@
 		8113545123DC25A300C90A20 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113545023DC25A300C90A20 /* TransactionListView.swift */; };
 		8113545323DC85EE00C90A20 /* CoreDataEntityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113545223DC85EE00C90A20 /* CoreDataEntityListView.swift */; };
 		8113545523DC8BF900C90A20 /* IconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113545423DC8BF900C90A20 /* IconListView.swift */; };
+		8113545723DC927100C90A20 /* AddIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113545623DC927100C90A20 /* AddIconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		8113545023DC25A300C90A20 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
 		8113545223DC85EE00C90A20 /* CoreDataEntityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEntityListView.swift; sourceTree = "<group>"; };
 		8113545423DC8BF900C90A20 /* IconListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconListView.swift; sourceTree = "<group>"; };
+		8113545623DC927100C90A20 /* AddIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				8113543523DBFAA900C90A20 /* JournalListView.swift */,
 				8113545423DC8BF900C90A20 /* IconListView.swift */,
+				8113545623DC927100C90A20 /* AddIconView.swift */,
 				8113545023DC25A300C90A20 /* TransactionListView.swift */,
 				8113544523DC198000C90A20 /* AccountListView.swift */,
 				8113544323DC136E00C90A20 /* BudgetListView.swift */,
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8113545723DC927100C90A20 /* AddIconView.swift in Sources */,
 				811353FF23DB9D0E00C90A20 /* CoreData200124.xcdatamodeld in Sources */,
 				8113543223DBF95F00C90A20 /* Budget+CoreDataClass.swift in Sources */,
 				8113542F23DBF95F00C90A20 /* Category+CoreDataProperties.swift in Sources */,
