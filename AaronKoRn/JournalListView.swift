@@ -40,7 +40,7 @@ struct JournalListView: View {
     }//List
       .navigationBarTitle("Journal List")
       .navigationBarItems(trailing: EditButton())
-      .onAppear(perform: actionJournal)
+      .onAppear(perform: appearAction)
     
   }//body
   
@@ -65,9 +65,9 @@ struct JournalListView: View {
   }//removeTransaction
   
   /// Aaron KoRn (c) 2020
-  func actionJournal() {
+  func appearAction() {
     print("\(#file): ...")
-  }//actionJournal
+  }//appearAction
 }//JournalListView
 
 struct JournalListView_Previews: PreviewProvider {

@@ -43,7 +43,7 @@ struct TransactionListView: View {
         .navigationBarItems(trailing: EditButton())
       
     }//NavigationView
-      .onAppear(perform: actionTransaction)
+      .onAppear(perform: appearAction)
   }//body
   
   /// Aaron KoRn (c) 2020
@@ -67,9 +67,9 @@ struct TransactionListView: View {
   }//removeTransaction
   
   /// Aaron KoRn (c) 2020
-  func actionTransaction() {
+  func appearAction() {
     print("\(#file): ...")
-  }//actionTransaction
+  }//appearAction
 }//TransactionListView
 
 struct TransactionListView_Previews: PreviewProvider {

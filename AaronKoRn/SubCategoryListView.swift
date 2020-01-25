@@ -39,7 +39,7 @@ struct SubCategoryListView: View {
     }//List
       .navigationBarTitle("Sub Category List")
       .navigationBarItems(trailing: EditButton())
-      .onAppear(perform: actionCategory)
+      .onAppear(perform: appearAction)
     
   }//body
   
@@ -64,9 +64,9 @@ struct SubCategoryListView: View {
   }//removeTransaction
   
   /// Aaron KoRn (c) 2020
-  func actionCategory() {
+  func appearAction() {
     print("\(#file): ...")
-  }//actionCategory
+  }//appearAction
 }//SubCategoryListView
 
 struct SubCategoryListView_Previews: PreviewProvider {

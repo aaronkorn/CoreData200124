@@ -43,7 +43,7 @@ struct AccountListView: View {
         .navigationBarItems(trailing: EditButton())
       
     }//NavigationView
-      .onAppear(perform: actionAccount)
+      .onAppear(perform: appearAction)
   }//body
   
   /// Aaron KoRn (c) 2020
@@ -67,13 +67,13 @@ struct AccountListView: View {
   }//removeTransaction
   
   /// Aaron KoRn (c) 2020
-  func actionAccount() {
+  func appearAction() {
     print("\(#file): ...")
-  }//actionAccount
+  }//appearAction
 }//AccountListView
 
 struct AccountListView_Previews: PreviewProvider {
-    static var previews: some View {
-        AccountListView()
-    }
+  static var previews: some View {
+    AccountListView()
+  }
 }//AccountListView_Previews

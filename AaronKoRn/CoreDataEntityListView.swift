@@ -27,9 +27,13 @@ struct CoreDataEntityListView: View {
         .navigationBarTitle("Core Data Entity")
       
     }//NavigationView
-    
+      .onAppear(perform: appearAction)
   }//body
   
+  /// Aaron KoRn (c) 2020
+  func appearAction() {
+    print("\(#file): ...")
+  }//appearAction
 }//CoreDataEntityListView
 
 struct CoreDataEntityListView_Previews: PreviewProvider {

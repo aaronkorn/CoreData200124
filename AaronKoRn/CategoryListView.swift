@@ -45,7 +45,7 @@ struct CategoryListView: View {
         .navigationBarItems(trailing: EditButton())
       
     }//NavigationView
-      .onAppear(perform: actionCategory)
+      .onAppear(perform: appearAction)
   }//body
   
   /// Aaron KoRn (c) 2020
@@ -69,9 +69,9 @@ struct CategoryListView: View {
   }//removeTransaction
   
   /// Aaron KoRn (c) 2020
-  func actionCategory() {
+  func appearAction() {
     print("\(#file): ...")
-  }//actionCategory
+  }//appearAction
 }//CategoryListView
 
 struct CategoryListView_Previews: PreviewProvider {

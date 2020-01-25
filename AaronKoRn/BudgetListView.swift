@@ -43,7 +43,7 @@ struct BudgetListView: View {
         .navigationBarItems(trailing: EditButton())
       
     }//NavigationView
-      .onAppear(perform: actionBudget)
+      .onAppear(perform: appearAction)
   }//body
   
   /// Aaron KoRn (c) 2020
@@ -67,9 +67,9 @@ struct BudgetListView: View {
   }//removeTransaction
   
   /// Aaron KoRn (c) 2020
-  func actionBudget() {
+  func appearAction() {
     print("\(#file): ...")
-  }//actionBudget
+  }//appearAction
 }//BudgetListView
 
 struct BudgetListView_Previews: PreviewProvider {
