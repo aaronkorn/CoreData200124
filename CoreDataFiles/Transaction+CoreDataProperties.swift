@@ -17,20 +17,20 @@ extension Transaction {
     return NSFetchRequest<Transaction>(entityName: "Transaction")
   }
   
-  @NSManaged public var id: UUID?
-  @NSManaged public var name: String?
-  @NSManaged public var date: Date?
   @NSManaged public var archiveFlag: Bool
   @NSManaged public var automateFlag: Bool
-  @NSManaged public var totalAmount: Double
   @NSManaged public var clearDate: Date?
   @NSManaged public var clearFlag: Bool
-  @NSManaged public var paidFlag: Bool
+  @NSManaged public var id: UUID?
+  @NSManaged public var name: String?
   @NSManaged public var paidDate: Date?
-  @NSManaged public var transactionEntries: NSSet?
+  @NSManaged public var paidFlag: Bool
+  @NSManaged public var totalAmount: Double
+  @NSManaged public var date: Date?
   @NSManaged public var icon: Icon?
+  @NSManaged public var payments: NSSet?
   @NSManaged public var repeatInterval: RepeatInterval?
-  @NSManaged public var payments: Payment?
+  @NSManaged public var transactionEntries: NSSet?
   
   /// Aaron KoRn (c) 2020
   public var wrappedName: String {
@@ -43,6 +43,30 @@ extension Transaction {
       $0.wrappedName < $1.wrappedName
     }
   }//transactionEntriesArray
+  /// Aaron KoRn (c) 2020
+  public var paymentsArray: [Payment] {
+    let set = payments as? Set<Payment> ?? []
+    return set.sorted {
+      $0.wrappedName < $1.wrappedName
+    }
+  }//paymentsArray
+}
+
+// MARK: Generated accessors for payments
+extension Transaction {
+  
+  @objc(addPaymentsObject:)
+  @NSManaged public func addToPayments(_ value: Payment)
+  
+  @objc(removePaymentsObject:)
+  @NSManaged public func removeFromPayments(_ value: Payment)
+  
+  @objc(addPayments:)
+  @NSManaged public func addToPayments(_ values: NSSet)
+  
+  @objc(removePayments:)
+  @NSManaged public func removeFromPayments(_ values: NSSet)
+  
 }
 
 // MARK: Generated accessors for transactionEntries

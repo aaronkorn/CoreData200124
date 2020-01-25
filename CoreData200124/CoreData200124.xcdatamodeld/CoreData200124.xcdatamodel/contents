@@ -85,7 +85,7 @@
         <attribute name="paidFlag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="totalAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="icon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Icon" inverseName="transactions" inverseEntity="Icon"/>
-        <relationship name="payments" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Payment" inverseName="transaction" inverseEntity="Payment"/>
+        <relationship name="payments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Payment" inverseName="transaction" inverseEntity="Payment"/>
         <relationship name="repeatInterval" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RepeatInterval" inverseName="transactions" inverseEntity="RepeatInterval"/>
         <relationship name="transactionEntries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TransactionEntry" inverseName="transaction" inverseEntity="TransactionEntry"/>
     </entity>
