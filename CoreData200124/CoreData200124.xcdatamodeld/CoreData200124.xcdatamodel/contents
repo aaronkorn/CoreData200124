@@ -29,7 +29,7 @@
         <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="children" inverseEntity="Category"/>
         <relationship name="transactionEntries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TransactionEntry" inverseName="category" inverseEntity="TransactionEntry"/>
     </entity>
-    <entity name="Icon" representedClassName="Icon" syncable="YES" codeGenerationType="class">
+    <entity name="Icon" representedClassName="Icon" syncable="YES">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="accounts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="icon" inverseEntity="Account"/>
@@ -48,7 +48,7 @@
         <relationship name="icon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Icon" inverseName="journals" inverseEntity="Icon"/>
         <relationship name="transactionEntries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TransactionEntry" inverseName="journal" inverseEntity="TransactionEntry"/>
     </entity>
-    <entity name="Payment" representedClassName="Payment" syncable="YES" codeGenerationType="class">
+    <entity name="Payment" representedClassName="Payment" syncable="YES">
         <attribute name="checkNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>

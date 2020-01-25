@@ -14,6 +14,24 @@
 		8113540323DB9D1200C90A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8113540223DB9D1200C90A20 /* Assets.xcassets */; };
 		8113540623DB9D1200C90A20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8113540523DB9D1200C90A20 /* Preview Assets.xcassets */; };
 		8113540923DB9D1200C90A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8113540723DB9D1200C90A20 /* LaunchScreen.storyboard */; };
+		8113542223DBF95F00C90A20 /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541023DBF95F00C90A20 /* Transaction+CoreDataClass.swift */; };
+		8113542323DBF95F00C90A20 /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541123DBF95F00C90A20 /* Transaction+CoreDataProperties.swift */; };
+		8113542423DBF95F00C90A20 /* RepeatInterval+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541223DBF95F00C90A20 /* RepeatInterval+CoreDataClass.swift */; };
+		8113542523DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541323DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift */; };
+		8113542623DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541423DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift */; };
+		8113542723DBF95F00C90A20 /* TransactionEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541523DBF95F00C90A20 /* TransactionEntry+CoreDataProperties.swift */; };
+		8113542823DBF95F00C90A20 /* Journal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541623DBF95F00C90A20 /* Journal+CoreDataClass.swift */; };
+		8113542923DBF95F00C90A20 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541723DBF95F00C90A20 /* Journal+CoreDataProperties.swift */; };
+		8113542A23DBF95F00C90A20 /* Icon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541823DBF95F00C90A20 /* Icon+CoreDataClass.swift */; };
+		8113542B23DBF95F00C90A20 /* Icon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541923DBF95F00C90A20 /* Icon+CoreDataProperties.swift */; };
+		8113542C23DBF95F00C90A20 /* Payment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541A23DBF95F00C90A20 /* Payment+CoreDataClass.swift */; };
+		8113542D23DBF95F00C90A20 /* Payment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541B23DBF95F00C90A20 /* Payment+CoreDataProperties.swift */; };
+		8113542E23DBF95F00C90A20 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541C23DBF95F00C90A20 /* Category+CoreDataClass.swift */; };
+		8113542F23DBF95F00C90A20 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541D23DBF95F00C90A20 /* Category+CoreDataProperties.swift */; };
+		8113543023DBF95F00C90A20 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541E23DBF95F00C90A20 /* Account+CoreDataClass.swift */; };
+		8113543123DBF95F00C90A20 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541F23DBF95F00C90A20 /* Account+CoreDataProperties.swift */; };
+		8113543223DBF95F00C90A20 /* Budget+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113542023DBF95F00C90A20 /* Budget+CoreDataClass.swift */; };
+		8113543323DBF95F00C90A20 /* Budget+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113542123DBF95F00C90A20 /* Budget+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +44,24 @@
 		8113540523DB9D1200C90A20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8113540823DB9D1200C90A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8113540A23DB9D1200C90A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8113541023DBF95F00C90A20 /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Transaction+CoreDataClass.swift"; path = "CoreData200124/Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8113541123DBF95F00C90A20 /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Transaction+CoreDataProperties.swift"; path = "CoreData200124/Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8113541223DBF95F00C90A20 /* RepeatInterval+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RepeatInterval+CoreDataClass.swift"; path = "CoreData200124/RepeatInterval+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8113541323DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RepeatInterval+CoreDataProperties.swift"; path = "CoreData200124/RepeatInterval+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8113541423DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TransactionEntry+CoreDataClass.swift"; path = "CoreData200124/TransactionEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8113541523DBF95F00C90A20 /* TransactionEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TransactionEntry+CoreDataProperties.swift"; path = "CoreData200124/TransactionEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8113541623DBF95F00C90A20 /* Journal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Journal+CoreDataClass.swift"; path = "CoreData200124/Journal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8113541723DBF95F00C90A20 /* Journal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Journal+CoreDataProperties.swift"; path = "CoreData200124/Journal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8113541823DBF95F00C90A20 /* Icon+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Icon+CoreDataClass.swift"; path = "CoreData200124/Icon+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8113541923DBF95F00C90A20 /* Icon+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Icon+CoreDataProperties.swift"; path = "CoreData200124/Icon+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8113541A23DBF95F00C90A20 /* Payment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Payment+CoreDataClass.swift"; path = "CoreData200124/Payment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8113541B23DBF95F00C90A20 /* Payment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Payment+CoreDataProperties.swift"; path = "CoreData200124/Payment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8113541C23DBF95F00C90A20 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Category+CoreDataClass.swift"; path = "CoreData200124/Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8113541D23DBF95F00C90A20 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Category+CoreDataProperties.swift"; path = "CoreData200124/Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8113541E23DBF95F00C90A20 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Account+CoreDataClass.swift"; path = "CoreData200124/Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8113541F23DBF95F00C90A20 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Account+CoreDataProperties.swift"; path = "CoreData200124/Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8113542023DBF95F00C90A20 /* Budget+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Budget+CoreDataClass.swift"; path = "CoreData200124/Budget+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8113542123DBF95F00C90A20 /* Budget+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Budget+CoreDataProperties.swift"; path = "CoreData200124/Budget+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +78,24 @@
 		811353ED23DB9D0E00C90A20 = {
 			isa = PBXGroup;
 			children = (
+				8113541023DBF95F00C90A20 /* Transaction+CoreDataClass.swift */,
+				8113541123DBF95F00C90A20 /* Transaction+CoreDataProperties.swift */,
+				8113541223DBF95F00C90A20 /* RepeatInterval+CoreDataClass.swift */,
+				8113541323DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift */,
+				8113541423DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift */,
+				8113541523DBF95F00C90A20 /* TransactionEntry+CoreDataProperties.swift */,
+				8113541623DBF95F00C90A20 /* Journal+CoreDataClass.swift */,
+				8113541723DBF95F00C90A20 /* Journal+CoreDataProperties.swift */,
+				8113541823DBF95F00C90A20 /* Icon+CoreDataClass.swift */,
+				8113541923DBF95F00C90A20 /* Icon+CoreDataProperties.swift */,
+				8113541A23DBF95F00C90A20 /* Payment+CoreDataClass.swift */,
+				8113541B23DBF95F00C90A20 /* Payment+CoreDataProperties.swift */,
+				8113541C23DBF95F00C90A20 /* Category+CoreDataClass.swift */,
+				8113541D23DBF95F00C90A20 /* Category+CoreDataProperties.swift */,
+				8113541E23DBF95F00C90A20 /* Account+CoreDataClass.swift */,
+				8113541F23DBF95F00C90A20 /* Account+CoreDataProperties.swift */,
+				8113542023DBF95F00C90A20 /* Budget+CoreDataClass.swift */,
+				8113542123DBF95F00C90A20 /* Budget+CoreDataProperties.swift */,
 				811353F823DB9D0E00C90A20 /* CoreData200124 */,
 				811353F723DB9D0E00C90A20 /* Products */,
 			);
@@ -150,9 +204,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				811353FF23DB9D0E00C90A20 /* CoreData200124.xcdatamodeld in Sources */,
+				8113543223DBF95F00C90A20 /* Budget+CoreDataClass.swift in Sources */,
+				8113542F23DBF95F00C90A20 /* Category+CoreDataProperties.swift in Sources */,
+				8113543123DBF95F00C90A20 /* Account+CoreDataProperties.swift in Sources */,
+				8113542223DBF95F00C90A20 /* Transaction+CoreDataClass.swift in Sources */,
+				8113542E23DBF95F00C90A20 /* Category+CoreDataClass.swift in Sources */,
+				8113542323DBF95F00C90A20 /* Transaction+CoreDataProperties.swift in Sources */,
+				8113542823DBF95F00C90A20 /* Journal+CoreDataClass.swift in Sources */,
+				8113542623DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift in Sources */,
+				8113543023DBF95F00C90A20 /* Account+CoreDataClass.swift in Sources */,
+				8113542523DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift in Sources */,
+				8113542B23DBF95F00C90A20 /* Icon+CoreDataProperties.swift in Sources */,
 				811353FA23DB9D0E00C90A20 /* AppDelegate.swift in Sources */,
+				8113542D23DBF95F00C90A20 /* Payment+CoreDataProperties.swift in Sources */,
 				8113540123DB9D0E00C90A20 /* ContentView.swift in Sources */,
+				8113542A23DBF95F00C90A20 /* Icon+CoreDataClass.swift in Sources */,
 				811353FC23DB9D0E00C90A20 /* SceneDelegate.swift in Sources */,
+				8113542C23DBF95F00C90A20 /* Payment+CoreDataClass.swift in Sources */,
+				8113543323DBF95F00C90A20 /* Budget+CoreDataProperties.swift in Sources */,
+				8113542423DBF95F00C90A20 /* RepeatInterval+CoreDataClass.swift in Sources */,
+				8113542923DBF95F00C90A20 /* Journal+CoreDataProperties.swift in Sources */,
+				8113542723DBF95F00C90A20 /* TransactionEntry+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
