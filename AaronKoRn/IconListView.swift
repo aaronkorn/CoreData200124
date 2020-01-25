@@ -22,7 +22,7 @@ struct IconListView: View {
       
       Section(header: Text("Hello, World 😎")) {
         
-        NavigationLink(destination: Text("AddIconView")) {
+        NavigationLink(destination: AddIconView()) {
           
           Image(systemName: "plus.circle.fill")
           Text("Add Icon")
