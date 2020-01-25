@@ -18,8 +18,7 @@ struct ListJournalView: View {
   ) var coreDataJournal: FetchedResults<Journal>
   
   var body: some View {
-    
-    NavigationView {//First
+    NavigationView {
       
       List {
         
@@ -44,9 +43,8 @@ struct ListJournalView: View {
         .navigationBarTitle("Journal List")
         .navigationBarItems(trailing: EditButton())
       
-    }//NavigationView First
+    }//NavigationView
       .onAppear(perform: actionJournal)
-    
   }//body
   
   /// Aaron KoRn (c) 2020
@@ -67,7 +65,6 @@ struct ListJournalView: View {
     } else {
       print("\(#file): no moc changes")
     }
-    
   }//removeTransaction
   
   /// Aaron KoRn (c) 2020
