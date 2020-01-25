@@ -32,6 +32,7 @@
 		8113543123DBF95F00C90A20 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541F23DBF95F00C90A20 /* Account+CoreDataProperties.swift */; };
 		8113543223DBF95F00C90A20 /* Budget+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113542023DBF95F00C90A20 /* Budget+CoreDataClass.swift */; };
 		8113543323DBF95F00C90A20 /* Budget+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113542123DBF95F00C90A20 /* Budget+CoreDataProperties.swift */; };
+		8113543623DBFAA900C90A20 /* ListJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113543523DBFAA900C90A20 /* ListJournalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		8113541F23DBF95F00C90A20 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Account+CoreDataProperties.swift"; path = "CoreData200124/Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8113542023DBF95F00C90A20 /* Budget+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Budget+CoreDataClass.swift"; path = "CoreData200124/Budget+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8113542123DBF95F00C90A20 /* Budget+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Budget+CoreDataProperties.swift"; path = "CoreData200124/Budget+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8113543523DBFAA900C90A20 /* ListJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJournalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				8113541F23DBF95F00C90A20 /* Account+CoreDataProperties.swift */,
 				8113542023DBF95F00C90A20 /* Budget+CoreDataClass.swift */,
 				8113542123DBF95F00C90A20 /* Budget+CoreDataProperties.swift */,
+				8113543423DBFA5F00C90A20 /* AaronKoRn */,
 				811353F823DB9D0E00C90A20 /* CoreData200124 */,
 				811353F723DB9D0E00C90A20 /* Products */,
 			);
@@ -130,6 +133,14 @@
 				8113540523DB9D1200C90A20 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8113543423DBFA5F00C90A20 /* AaronKoRn */ = {
+			isa = PBXGroup;
+			children = (
+				8113543523DBFAA900C90A20 /* ListJournalView.swift */,
+			);
+			path = AaronKoRn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 				8113542E23DBF95F00C90A20 /* Category+CoreDataClass.swift in Sources */,
 				8113542323DBF95F00C90A20 /* Transaction+CoreDataProperties.swift in Sources */,
 				8113542823DBF95F00C90A20 /* Journal+CoreDataClass.swift in Sources */,
+				8113543623DBFAA900C90A20 /* ListJournalView.swift in Sources */,
 				8113542623DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift in Sources */,
 				8113543023DBF95F00C90A20 /* Account+CoreDataClass.swift in Sources */,
 				8113542523DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift in Sources */,
