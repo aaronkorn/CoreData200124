@@ -20,7 +20,18 @@ struct IconListView: View {
     
     List {
       
-      Section(header: Text("Hello, World 😎 \(coreDataIcon.count)")) {
+      Section(header: Text("Hello, World 😎")) {
+        
+        NavigationLink(destination: Text("AddIconView")) {
+          
+          Image(systemName: "plus.circle.fill")
+          Text("Add Icon")
+          
+        }//NavigationLink
+
+      }//Section
+      
+      Section(header: Text("How many? \(coreDataIcon.count)")) {
         
         ForEach (coreDataIcon, id: \.id) { oneIcon in
           

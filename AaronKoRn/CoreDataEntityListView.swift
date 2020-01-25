@@ -23,6 +23,13 @@ struct CoreDataEntityListView: View {
           
         }//NavigationLink
         
+        NavigationLink(destination: IconListView()) {
+          
+          Image(systemName: "2.circle")
+          Text("Icon")
+          
+        }//NavigationLink
+
       }//List
         .navigationBarTitle("Core Data Entity")
       
