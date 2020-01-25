@@ -29,6 +29,17 @@ extension Budget {
   @NSManaged public var icon: Icon?
   @NSManaged public var journal: Journal?
   
+  /// Aaron KoRn (c) 2020
+  public var wrappedName: String {
+    name ?? "[name]"
+  }
+  /// Aaron KoRn (c) 2020
+  public var categoriesArray: [Category] {
+    let set = categories as? Set<Category> ?? []
+    return set.sorted {
+      $0.wrappedName < $1.wrappedName
+    }
+  }//categoriesArray
 }
 
 // MARK: Generated accessors for categories

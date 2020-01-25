@@ -32,6 +32,7 @@
         <relationship name="transactionEntries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TransactionEntry" inverseName="category" inverseEntity="TransactionEntry"/>
     </entity>
     <entity name="Icon" representedClassName="Icon" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="accounts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="icon" inverseEntity="Account"/>
@@ -61,6 +62,7 @@
         <relationship name="transaction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transaction" inverseName="payments" inverseEntity="Transaction"/>
     </entity>
     <entity name="RepeatInterval" representedClassName="RepeatInterval" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="dayMonthYear" optional="YES" attributeType="String"/>
         <attribute name="everyNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="everyType" optional="YES" attributeType="String"/>
@@ -76,6 +78,7 @@
         <attribute name="automateFlag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="clearDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="clearFlag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="paidDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -88,6 +91,7 @@
     </entity>
     <entity name="TransactionEntry" representedClassName="TransactionEntry" syncable="YES">
         <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="transactionEntries" inverseEntity="Category"/>
@@ -99,11 +103,11 @@
         <element name="Account" positionX="-888.1796875" positionY="211.453125" width="128" height="118"/>
         <element name="Budget" positionX="-1041.73828125" positionY="-0.57421875" width="128" height="208"/>
         <element name="Category" positionX="-851.35546875" positionY="-257.31640625" width="128" height="178"/>
-        <element name="Icon" positionX="-624.87109375" positionY="-43.8359375" width="128" height="193"/>
+        <element name="Icon" positionX="-624.87109375" positionY="-43.8359375" width="128" height="208"/>
         <element name="Journal" positionX="-405.04296875" positionY="-108.40234375" width="128" height="133"/>
         <element name="Payment" positionX="-402.6796875" positionY="227.125" width="128" height="148"/>
-        <element name="RepeatInterval" positionX="-367.609375" positionY="-315.546875" width="128" height="178"/>
-        <element name="Transaction" positionX="-38.63671875" positionY="-109.12890625" width="128" height="238"/>
-        <element name="TransactionEntry" positionX="-218.37890625" positionY="190.65625" width="128" height="148"/>
+        <element name="RepeatInterval" positionX="-367.609375" positionY="-315.546875" width="128" height="193"/>
+        <element name="Transaction" positionX="-38.63671875" positionY="-109.12890625" width="128" height="253"/>
+        <element name="TransactionEntry" positionX="-218.37890625" positionY="190.65625" width="128" height="163"/>
     </elements>
 </model>

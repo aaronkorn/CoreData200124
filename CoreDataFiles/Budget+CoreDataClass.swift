@@ -1,5 +1,5 @@
 //
-//  Account+CoreDataClass.swift
+//  Budget+CoreDataClass.swift
 //  CoreData200124
 //
 //  Created by AARON KORN on 1/24/20.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(Account)
-public class Account: NSManagedObject {
-
+@objc(Budget)
+public class Budget: NSManagedObject {
+  
 }

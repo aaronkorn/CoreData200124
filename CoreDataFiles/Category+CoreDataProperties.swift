@@ -38,6 +38,13 @@ extension Category {
       $0.wrappedName < $1.wrappedName
     }
   }//childrenArray
+  /// Aaron KoRn (c) 2020
+  public var transactionEntriesArray: [TransactionEntry] {
+    let set = transactionEntries as? Set<TransactionEntry> ?? []
+    return set.sorted {
+      $0.wrappedName < $1.wrappedName
+    }
+  }//transactionEntriesArray
 }
 
 // MARK: Generated accessors for transactionEntries
