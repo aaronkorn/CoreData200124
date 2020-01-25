@@ -16,69 +16,68 @@ struct ListJournalView: View {
     entity: Journal.entity(),
     sortDescriptors: []
   ) var coreDataJournal: FetchedResults<Journal>
-    
+  
   var body: some View {
+    
+    NavigationView {//First
+      
+      List {
+        
+        Section(header: Text("Hello, World 😎 \(coreDataJournal.count)")) {
+          
+          ForEach (coreDataJournal, id: \.id) { oneJournal in
+            
+            HStack {
+              
+              Text("\(oneJournal.name ?? "[name]")")
+              
+              Text("\(oneJournal.date?.description ?? "[date]")")
+              
+            }//HStack
+            
+          }//ForEach
+            .onDelete(perform: removeJournal)
+          
+        }//Section
+        
+      }//List
+        .navigationBarTitle("Journal List")
+        .navigationBarItems(trailing: EditButton())
+      
+    }//NavigationView First
+      .onAppear(perform: actionJournal)
+    
+  }//body
   
-      NavigationView {//First
-  
-        List {
-  
-          Section(header: Text("Hello, World 😎 \(coreDataJournal.count)")) {
-  
-            ForEach (coreDataJournal, id: \.id) { oneJournal in
-  
-              HStack {
-  
-                Text("\(oneJournal.name ?? "[name]")")
-  
-                Text("\(oneJournal.date?.description ?? "[date]")")
-
-  
-              }//HStack
-  
-            }//ForEach
-              .onDelete(perform: removeJournal)
-  
-          }//Section
-  
-        }//List
-          .navigationBarTitle("Journal List")
-          .navigationBarItems(trailing: EditButton())
-  
-      }//NavigationView First
-        .onAppear(perform: actionJournal)
-  
-    }//body
-  
-    /// Aaron KoRn (c) 2020
-    func removeJournal(at offsets: IndexSet) {
-      for index in offsets {
-        let oneJournal = coreDataJournal[index]
-        moc.delete(oneJournal)
+  /// Aaron KoRn (c) 2020
+  func removeJournal(at offsets: IndexSet) {
+    for index in offsets {
+      let oneJournal = coreDataJournal[index]
+      moc.delete(oneJournal)
+    }
+    if moc.hasChanges {
+      print("\(#file): moc has changes")
+      do {
+        try moc.save()
+        print("\(#file): moc saved")
       }
-      if moc.hasChanges {
-        print("\(#file): moc has changes")
-        do {
-          try moc.save()
-          print("\(#file): moc saved")
-        }
-        catch let error {
-          print("\(#file): moc cannot save: \(error.localizedDescription)")
-        }
-      } else {
-        print("\(#file): no moc changes")
+      catch let error {
+        print("\(#file): moc cannot save: \(error.localizedDescription)")
       }
+    } else {
+      print("\(#file): no moc changes")
+    }
+    
+  }//removeTransaction
   
-    }//removeTransaction
-  
-    /// Aaron KoRn (c) 2020
-    func actionJournal() {
-        print("\(#file): ...")
-    }//actionJournal
-}
+  /// Aaron KoRn (c) 2020
+  func actionJournal() {
+    print("\(#file): ...")
+  }//actionJournal
+}//ListJournalView
 
 struct ListJournalView_Previews: PreviewProvider {
   static var previews: some View {
     ListJournalView()
   }
-}
+}//ListJournalView_Previews
