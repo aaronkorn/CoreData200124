@@ -35,6 +35,7 @@
 		8113543E23DC007A00C90A20 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113543C23DC007A00C90A20 /* Journal+CoreDataProperties.swift */; };
 		8113544023DC0C2500C90A20 /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113543F23DC0C2500C90A20 /* CategoryListView.swift */; };
 		8113544223DC0DB000C90A20 /* SubCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113544123DC0DB000C90A20 /* SubCategoryListView.swift */; };
+		8113544423DC136E00C90A20 /* BudgetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113544323DC136E00C90A20 /* BudgetListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		8113543C23DC007A00C90A20 /* Journal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8113543F23DC0C2500C90A20 /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
 		8113544123DC0DB000C90A20 /* SubCategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryListView.swift; sourceTree = "<group>"; };
+		8113544323DC136E00C90A20 /* BudgetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				8113543523DBFAA900C90A20 /* JournalListView.swift */,
+				8113544323DC136E00C90A20 /* BudgetListView.swift */,
 				8113543F23DC0C2500C90A20 /* CategoryListView.swift */,
 				8113544123DC0DB000C90A20 /* SubCategoryListView.swift */,
 			);
@@ -231,6 +234,7 @@
 				8113542323DBF95F00C90A20 /* Transaction+CoreDataProperties.swift in Sources */,
 				8113543623DBFAA900C90A20 /* JournalListView.swift in Sources */,
 				8113542623DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift in Sources */,
+				8113544423DC136E00C90A20 /* BudgetListView.swift in Sources */,
 				8113543023DBF95F00C90A20 /* Account+CoreDataClass.swift in Sources */,
 				8113542523DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift in Sources */,
 				8113543E23DC007A00C90A20 /* Journal+CoreDataProperties.swift in Sources */,

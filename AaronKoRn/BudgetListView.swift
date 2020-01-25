@@ -1,5 +1,5 @@
 //
-//  JournalListView.swift
+//  BudgetListView.swift
 //  CoreData200124
 //
 //  Created by AARON KORN on 1/24/20.
@@ -8,49 +8,49 @@
 
 import SwiftUI
 
-struct JournalListView: View {
+struct BudgetListView: View {
   @Environment(\.managedObjectContext) var moc
   
   @FetchRequest(
-    entity: Journal.entity(),
+    entity: Budget.entity(),
     sortDescriptors: []
-  ) var coreDataJournal: FetchedResults<Journal>
+  ) var coreDataBudget: FetchedResults<Budget>
   
   var body: some View {
     NavigationView {
       
       List {
         
-        Section(header: Text("Hello, World 😎 \(coreDataJournal.count)")) {
+        Section(header: Text("Hello, World 😎 \(coreDataBudget.count)")) {
           
-          ForEach (coreDataJournal, id: \.id) { oneJournal in
+          ForEach (coreDataBudget, id: \.id) { oneBudget in
             
             HStack {
               
-              Text("\(oneJournal.name ?? "[name]")")
+              Text("\(oneBudget.name ?? "[name]")")
               
-              Text("\(oneJournal.date?.description ?? "[date]")")
+              Text("\(oneBudget.date?.description ?? "[date]")")
               
             }//HStack
             
           }//ForEach
-            .onDelete(perform: removeJournal)
+            .onDelete(perform: removeBudget)
           
         }//Section
         
       }//List
-        .navigationBarTitle("Journal List")
+        .navigationBarTitle("Budget List")
         .navigationBarItems(trailing: EditButton())
       
     }//NavigationView
-      .onAppear(perform: actionJournal)
+      .onAppear(perform: actionBudget)
   }//body
   
   /// Aaron KoRn (c) 2020
-  func removeJournal(at offsets: IndexSet) {
+  func removeBudget(at offsets: IndexSet) {
     for index in offsets {
-      let oneJournal = coreDataJournal[index]
-      moc.delete(oneJournal)
+      let oneBudget = coreDataBudget[index]
+      moc.delete(oneBudget)
     }
     if moc.hasChanges {
       print("\(#file): moc has changes")
@@ -67,13 +67,13 @@ struct JournalListView: View {
   }//removeTransaction
   
   /// Aaron KoRn (c) 2020
-  func actionJournal() {
+  func actionBudget() {
     print("\(#file): ...")
-  }//actionJournal
-}//JournalListView
+  }//actionBudget
+}//BudgetListView
 
-struct JournalListView_Previews: PreviewProvider {
+struct BudgetListView_Previews: PreviewProvider {
   static var previews: some View {
-    JournalListView()
+    BudgetListView()
   }
-}//JournalListView_Previews
+}//BudgetListView_Previews

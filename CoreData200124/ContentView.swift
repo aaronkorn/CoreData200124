@@ -27,6 +27,11 @@ struct ContentView: View {
           Image(systemName: "2.circle")
           Text("Category")
       }.tag(1)
+      BudgetListView()
+        .tabItem {
+          Image(systemName: "3.circle")
+          Text("Budget")
+      }.tag(2)
     }//TabView
       .onAppear(perform: actionContentView)
   }//body

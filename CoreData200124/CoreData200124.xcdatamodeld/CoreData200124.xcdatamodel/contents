@@ -8,6 +8,7 @@
     </entity>
     <entity name="Budget" representedClassName="Budget" syncable="YES">
         <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="dateBegin" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="dateEnd" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
@@ -94,14 +95,14 @@
         <relationship name="transaction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transaction" inverseName="transactionEntries" inverseEntity="Transaction"/>
     </entity>
     <elements>
-        <element name="Transaction" positionX="-38.63671875" positionY="-109.12890625" width="128" height="238"/>
-        <element name="Category" positionX="-851.35546875" positionY="-257.31640625" width="128" height="178"/>
-        <element name="RepeatInterval" positionX="-367.609375" positionY="-315.546875" width="128" height="178"/>
-        <element name="TransactionEntry" positionX="-218.37890625" positionY="190.65625" width="128" height="148"/>
         <element name="Account" positionX="-888.1796875" positionY="211.453125" width="128" height="103"/>
-        <element name="Budget" positionX="-1041.73828125" positionY="-0.57421875" width="128" height="193"/>
-        <element name="Journal" positionX="-405.04296875" positionY="-108.40234375" width="128" height="133"/>
+        <element name="Budget" positionX="-1041.73828125" positionY="-0.57421875" width="128" height="208"/>
+        <element name="Category" positionX="-851.35546875" positionY="-257.31640625" width="128" height="178"/>
         <element name="Icon" positionX="-624.87109375" positionY="-43.8359375" width="128" height="193"/>
+        <element name="Journal" positionX="-405.04296875" positionY="-108.40234375" width="128" height="133"/>
         <element name="Payment" positionX="-402.6796875" positionY="227.125" width="128" height="148"/>
+        <element name="RepeatInterval" positionX="-367.609375" positionY="-315.546875" width="128" height="178"/>
+        <element name="Transaction" positionX="-38.63671875" positionY="-109.12890625" width="128" height="238"/>
+        <element name="TransactionEntry" positionX="-218.37890625" positionY="190.65625" width="128" height="148"/>
     </elements>
 </model>
