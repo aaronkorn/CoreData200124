@@ -31,7 +31,7 @@ struct ListJournalView: View {
   
                 Text("\(oneJournal.name ?? "[name]")")
   
-                Text("\(oneJournal.date ?? "[name]")")
+                Text("\(oneJournal.date?.description ?? "[date]")")
 
   
               }//HStack
