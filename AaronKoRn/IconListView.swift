@@ -36,10 +36,14 @@ struct IconListView: View {
         ForEach (coreDataIcon, id: \.id) { oneIcon in
           
           HStack {
+
+            Image(systemName: "\(oneIcon.wrappedIcon)")
             
             Text("\(oneIcon.name ?? "[name]")")
             
-            Text("\(oneIcon.date?.description ?? "[date]")")
+            Spacer()
+            
+            Text("\(oneIcon.wrappedDate)")
             
           }//HStack
           

@@ -30,6 +30,11 @@ extension Icon {
   @NSManaged public var transactions: NSSet?
   
   /// Aaron KoRn (c) 2020
+  public var wrappedIcon: String {
+    name ?? "ant.circle.fill"
+  }//wrappedName
+
+  /// Aaron KoRn (c) 2020
   public var wrappedName: String {
     name ?? "[name]"
   }//wrappedName
@@ -37,7 +42,7 @@ extension Icon {
   /// Aaron KoRn (c) 2020
   public var wrappedDate: String {
     // date currently as iso8601
-    if let wrappedDate = self.dateDate {
+    if let wrappedDate = self.date {
       let formatter = DateFormatter()
       formatter.dateStyle = .short
       return formatter.string(from: wrappedDate)

@@ -35,7 +35,7 @@ extension Category {
   /// Aaron KoRn (c) 2020
   public var wrappedDate: String {
     // date currently as iso8601
-    if let wrappedDate = self.dateDate {
+    if let wrappedDate = self.date {
       let formatter = DateFormatter()
       formatter.dateStyle = .short
       return formatter.string(from: wrappedDate)
