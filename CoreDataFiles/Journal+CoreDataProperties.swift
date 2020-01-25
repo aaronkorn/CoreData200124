@@ -27,7 +27,20 @@ extension Journal {
   /// Aaron KoRn (c) 2020
   public var wrappedName: String {
     name ?? "[name]"
-  }
+  }//wrappedName
+  
+  /// Aaron KoRn (c) 2020
+  public var wrappedDate: String {
+    // date currently as iso8601
+    if let wrappedDate = self.dateDate {
+      let formatter = DateFormatter()
+      formatter.dateStyle = .short
+      return formatter.string(from: wrappedDate)
+    } else {
+      return "06/09/69"
+    }
+  }//wrappedDate
+  
   /// Aaron KoRn (c) 2020
   public var transactionEntriesArray: [TransactionEntry] {
     let set = transactionEntries as? Set<TransactionEntry> ?? []
@@ -35,6 +48,7 @@ extension Journal {
       $0.wrappedName < $1.wrappedName
     }
   }//transactionEntriesArray
+  
   /// Aaron KoRn (c) 2020
   public var budgetsArray: [Budget] {
     let set = budgets as? Set<Budget> ?? []
@@ -42,7 +56,8 @@ extension Journal {
       $0.wrappedName < $1.wrappedName
     }
   }//budgetsArray
-}
+  
+}//extension Journal
 
 // MARK: Generated accessors for transactionEntries
 extension Journal {

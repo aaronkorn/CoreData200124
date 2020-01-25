@@ -32,7 +32,20 @@ extension Icon {
   /// Aaron KoRn (c) 2020
   public var wrappedName: String {
     name ?? "[name]"
-  }
+  }//wrappedName
+  
+  /// Aaron KoRn (c) 2020
+  public var wrappedDate: String {
+    // date currently as iso8601
+    if let wrappedDate = self.dateDate {
+      let formatter = DateFormatter()
+      formatter.dateStyle = .short
+      return formatter.string(from: wrappedDate)
+    } else {
+      return "06/09/69"
+    }
+  }//wrappedDate
+  
   /// Aaron KoRn (c) 2020
   public var accountsArray: [Account] {
     let set = accounts as? Set<Account> ?? []
@@ -40,6 +53,7 @@ extension Icon {
       $0.wrappedName < $1.wrappedName
     }
   }//accountsArray
+  
   /// Aaron KoRn (c) 2020
   public var budgetsArray: [Budget] {
     let set = budgets as? Set<Budget> ?? []
@@ -47,6 +61,7 @@ extension Icon {
       $0.wrappedName < $1.wrappedName
     }
   }//budgetsArray
+  
   /// Aaron KoRn (c) 2020
   public var categoriesArray: [Category] {
     let set = categories as? Set<Category> ?? []
@@ -54,6 +69,7 @@ extension Icon {
       $0.wrappedName < $1.wrappedName
     }
   }//categoriesArray
+  
   /// Aaron KoRn (c) 2020
   public var journalsArray: [Journal] {
     let set = journals as? Set<Journal> ?? []
@@ -61,6 +77,7 @@ extension Icon {
       $0.wrappedName < $1.wrappedName
     }
   }//journalsArray
+  
   /// Aaron KoRn (c) 2020
   public var paymentsArray: [Payment] {
     let set = payments as? Set<Payment> ?? []
@@ -68,6 +85,7 @@ extension Icon {
       $0.wrappedName < $1.wrappedName
     }
   }//paymentsArray
+  
   /// Aaron KoRn (c) 2020
   public var repeatIntervalsArray: [RepeatInterval] {
     let set = repeatIntervals as? Set<RepeatInterval> ?? []
@@ -75,6 +93,7 @@ extension Icon {
       $0.wrappedName < $1.wrappedName
     }
   }//repeatIntervalsArray
+  
   /// Aaron KoRn (c) 2020
   public var transactionEntriesArray: [TransactionEntry] {
     let set = transactionEntries as? Set<TransactionEntry> ?? []
@@ -82,6 +101,7 @@ extension Icon {
       $0.wrappedName < $1.wrappedName
     }
   }//transactionEntriesArray
+  
   /// Aaron KoRn (c) 2020
   public var transactionsArray: [Transaction] {
     let set = transactions as? Set<Transaction> ?? []
@@ -89,7 +109,8 @@ extension Icon {
       $0.wrappedName < $1.wrappedName
     }
   }//transactionsArray
-}
+  
+}//extension Icon
 
 // MARK: Generated accessors for accounts
 extension Icon {
@@ -225,4 +246,4 @@ extension Icon {
   @objc(removeTransactions:)
   @NSManaged public func removeFromTransactions(_ values: NSSet)
   
-}//Icon
+}

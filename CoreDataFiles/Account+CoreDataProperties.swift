@@ -26,7 +26,20 @@ extension Account {
   /// Aaron KoRn (c) 2020
   public var wrappedName: String {
     name ?? "[name]"
-  }
+  }//wrappedName
+  
+  /// Aaron KoRn (c) 2020
+  public var wrappedDate: String {
+    // date currently as iso8601
+    if let wrappedDate = self.dateDate {
+      let formatter = DateFormatter()
+      formatter.dateStyle = .short
+      return formatter.string(from: wrappedDate)
+    } else {
+      return "06/09/69"
+    }
+  }//wrappedDate
+  
   /// Aaron KoRn (c) 2020
   public var paymentsArray: [Payment] {
     let set = payments as? Set<Payment> ?? []
@@ -34,7 +47,8 @@ extension Account {
       $0.wrappedName < $1.wrappedName
     }
   }//paymentsArray
-}
+  
+}//extension Account
 
 // MARK: Generated accessors for payments
 extension Account {

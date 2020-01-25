@@ -29,4 +29,17 @@ extension Payment {
   public var wrappedName: String {
     name ?? "[name]"
   }//wrappedName
-}
+  
+  /// Aaron KoRn (c) 2020
+  public var wrappedDate: String {
+    // date currently as iso8601
+    if let wrappedDate = self.dateDate {
+      let formatter = DateFormatter()
+      formatter.dateStyle = .short
+      return formatter.string(from: wrappedDate)
+    } else {
+      return "06/09/69"
+    }
+  }//wrappedDate
+  
+}//extension TransactionEntry
