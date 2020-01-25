@@ -13,6 +13,7 @@ struct AddIconView: View {
   @Environment(\.managedObjectContext) var moc
   
   @State private var name = ""
+  @State private var showingAlert = false
   
   var body: some View {
     
@@ -40,6 +41,9 @@ struct AddIconView: View {
             do {
               try self.moc.save()
               print("\(#file): moc saved")
+              
+              self.showingAlert.toggle()
+              self.name = ""
             }
             catch let error {
               print("\(#file): moc cannot save: \(error.localizedDescription)")
@@ -49,6 +53,12 @@ struct AddIconView: View {
           }
 
         }//Button
+          .alert(isPresented: $showingAlert) {
+            Alert(
+              title: Text("Important message"),
+              message: Text("moc saved"),
+              dismissButton: .default(Text("Got it!")))
+        }//alert
         
       }//Section
       .disabled(name.isEmpty)
