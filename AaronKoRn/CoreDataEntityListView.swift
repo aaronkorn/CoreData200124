@@ -9,26 +9,27 @@
 import SwiftUI
 
 struct CoreDataEntityListView: View {
-
+  
   var body: some View {
-
+    
     NavigationView {
-
+      
       List {
-
+        
         NavigationLink(destination: JournalListView()) {
-
+          
           Image(systemName: "1.circle")
           Text("Journal")
-
+          
         }//NavigationLink
-
+        
       }//List
-
+        .navigationBarTitle("Core Data Entity")
+      
     }//NavigationView
-
+    
   }//body
-
+  
 }//CoreDataEntityListView
 
 struct CoreDataEntityListView_Previews: PreviewProvider {

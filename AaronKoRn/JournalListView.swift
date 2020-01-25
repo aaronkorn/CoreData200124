@@ -17,33 +17,31 @@ struct JournalListView: View {
   ) var coreDataJournal: FetchedResults<Journal>
   
   var body: some View {
-    NavigationView {
+    
+    List {
       
-      List {
+      Section(header: Text("Hello, World 😎 \(coreDataJournal.count)")) {
         
-        Section(header: Text("Hello, World 😎 \(coreDataJournal.count)")) {
+        ForEach (coreDataJournal, id: \.id) { oneJournal in
           
-          ForEach (coreDataJournal, id: \.id) { oneJournal in
+          HStack {
             
-            HStack {
-              
-              Text("\(oneJournal.name ?? "[name]")")
-              
-              Text("\(oneJournal.date?.description ?? "[date]")")
-              
-            }//HStack
+            Text("\(oneJournal.name ?? "[name]")")
             
-          }//ForEach
-            .onDelete(perform: removeJournal)
+            Text("\(oneJournal.date?.description ?? "[date]")")
+            
+          }//HStack
           
-        }//Section
+        }//ForEach
+          .onDelete(perform: removeJournal)
         
-      }//List
-        .navigationBarTitle("Journal List")
-        .navigationBarItems(trailing: EditButton())
+      }//Section
       
-    }//NavigationView
+    }//List
+      .navigationBarTitle("Journal List")
+      .navigationBarItems(trailing: EditButton())
       .onAppear(perform: actionJournal)
+    
   }//body
   
   /// Aaron KoRn (c) 2020

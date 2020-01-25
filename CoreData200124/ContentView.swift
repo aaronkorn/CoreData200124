@@ -17,10 +17,10 @@ struct ContentView: View {
   
   var body: some View {
     TabView(selection: $selectedView) {
-      JournalListView()
+      CoreDataEntityListView()
         .tabItem {
           Image(systemName: "1.circle")
-          Text("Journal")
+          Text("Core Data")
       }.tag(0)
       CategoryListView()
         .tabItem {
