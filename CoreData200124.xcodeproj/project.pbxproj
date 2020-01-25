@@ -20,8 +20,6 @@
 		8113542523DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541323DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift */; };
 		8113542623DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541423DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift */; };
 		8113542723DBF95F00C90A20 /* TransactionEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541523DBF95F00C90A20 /* TransactionEntry+CoreDataProperties.swift */; };
-		8113542823DBF95F00C90A20 /* Journal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541623DBF95F00C90A20 /* Journal+CoreDataClass.swift */; };
-		8113542923DBF95F00C90A20 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541723DBF95F00C90A20 /* Journal+CoreDataProperties.swift */; };
 		8113542A23DBF95F00C90A20 /* Icon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541823DBF95F00C90A20 /* Icon+CoreDataClass.swift */; };
 		8113542B23DBF95F00C90A20 /* Icon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541923DBF95F00C90A20 /* Icon+CoreDataProperties.swift */; };
 		8113542C23DBF95F00C90A20 /* Payment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113541A23DBF95F00C90A20 /* Payment+CoreDataClass.swift */; };
@@ -33,6 +31,8 @@
 		8113543223DBF95F00C90A20 /* Budget+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113542023DBF95F00C90A20 /* Budget+CoreDataClass.swift */; };
 		8113543323DBF95F00C90A20 /* Budget+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113542123DBF95F00C90A20 /* Budget+CoreDataProperties.swift */; };
 		8113543623DBFAA900C90A20 /* ListJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113543523DBFAA900C90A20 /* ListJournalView.swift */; };
+		8113543D23DC007A00C90A20 /* Journal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113543B23DC007A00C90A20 /* Journal+CoreDataClass.swift */; };
+		8113543E23DC007A00C90A20 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113543C23DC007A00C90A20 /* Journal+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +51,6 @@
 		8113541323DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RepeatInterval+CoreDataProperties.swift"; path = "CoreData200124/RepeatInterval+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8113541423DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TransactionEntry+CoreDataClass.swift"; path = "CoreData200124/TransactionEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8113541523DBF95F00C90A20 /* TransactionEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TransactionEntry+CoreDataProperties.swift"; path = "CoreData200124/TransactionEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8113541623DBF95F00C90A20 /* Journal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Journal+CoreDataClass.swift"; path = "CoreData200124/Journal+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8113541723DBF95F00C90A20 /* Journal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Journal+CoreDataProperties.swift"; path = "CoreData200124/Journal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8113541823DBF95F00C90A20 /* Icon+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Icon+CoreDataClass.swift"; path = "CoreData200124/Icon+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8113541923DBF95F00C90A20 /* Icon+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Icon+CoreDataProperties.swift"; path = "CoreData200124/Icon+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8113541A23DBF95F00C90A20 /* Payment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Payment+CoreDataClass.swift"; path = "CoreData200124/Payment+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -64,6 +62,8 @@
 		8113542023DBF95F00C90A20 /* Budget+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Budget+CoreDataClass.swift"; path = "CoreData200124/Budget+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8113542123DBF95F00C90A20 /* Budget+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Budget+CoreDataProperties.swift"; path = "CoreData200124/Budget+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8113543523DBFAA900C90A20 /* ListJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJournalView.swift; sourceTree = "<group>"; };
+		8113543B23DC007A00C90A20 /* Journal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8113543C23DC007A00C90A20 /* Journal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,14 +80,14 @@
 		811353ED23DB9D0E00C90A20 = {
 			isa = PBXGroup;
 			children = (
+				8113543B23DC007A00C90A20 /* Journal+CoreDataClass.swift */,
+				8113543C23DC007A00C90A20 /* Journal+CoreDataProperties.swift */,
 				8113541023DBF95F00C90A20 /* Transaction+CoreDataClass.swift */,
 				8113541123DBF95F00C90A20 /* Transaction+CoreDataProperties.swift */,
 				8113541223DBF95F00C90A20 /* RepeatInterval+CoreDataClass.swift */,
 				8113541323DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift */,
 				8113541423DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift */,
 				8113541523DBF95F00C90A20 /* TransactionEntry+CoreDataProperties.swift */,
-				8113541623DBF95F00C90A20 /* Journal+CoreDataClass.swift */,
-				8113541723DBF95F00C90A20 /* Journal+CoreDataProperties.swift */,
 				8113541823DBF95F00C90A20 /* Icon+CoreDataClass.swift */,
 				8113541923DBF95F00C90A20 /* Icon+CoreDataProperties.swift */,
 				8113541A23DBF95F00C90A20 /* Payment+CoreDataClass.swift */,
@@ -217,15 +217,16 @@
 				811353FF23DB9D0E00C90A20 /* CoreData200124.xcdatamodeld in Sources */,
 				8113543223DBF95F00C90A20 /* Budget+CoreDataClass.swift in Sources */,
 				8113542F23DBF95F00C90A20 /* Category+CoreDataProperties.swift in Sources */,
+				8113543D23DC007A00C90A20 /* Journal+CoreDataClass.swift in Sources */,
 				8113543123DBF95F00C90A20 /* Account+CoreDataProperties.swift in Sources */,
 				8113542223DBF95F00C90A20 /* Transaction+CoreDataClass.swift in Sources */,
 				8113542E23DBF95F00C90A20 /* Category+CoreDataClass.swift in Sources */,
 				8113542323DBF95F00C90A20 /* Transaction+CoreDataProperties.swift in Sources */,
-				8113542823DBF95F00C90A20 /* Journal+CoreDataClass.swift in Sources */,
 				8113543623DBFAA900C90A20 /* ListJournalView.swift in Sources */,
 				8113542623DBF95F00C90A20 /* TransactionEntry+CoreDataClass.swift in Sources */,
 				8113543023DBF95F00C90A20 /* Account+CoreDataClass.swift in Sources */,
 				8113542523DBF95F00C90A20 /* RepeatInterval+CoreDataProperties.swift in Sources */,
+				8113543E23DC007A00C90A20 /* Journal+CoreDataProperties.swift in Sources */,
 				8113542B23DBF95F00C90A20 /* Icon+CoreDataProperties.swift in Sources */,
 				811353FA23DB9D0E00C90A20 /* AppDelegate.swift in Sources */,
 				8113542D23DBF95F00C90A20 /* Payment+CoreDataProperties.swift in Sources */,
@@ -235,7 +236,6 @@
 				8113542C23DBF95F00C90A20 /* Payment+CoreDataClass.swift in Sources */,
 				8113543323DBF95F00C90A20 /* Budget+CoreDataProperties.swift in Sources */,
 				8113542423DBF95F00C90A20 /* RepeatInterval+CoreDataClass.swift in Sources */,
-				8113542923DBF95F00C90A20 /* Journal+CoreDataProperties.swift in Sources */,
 				8113542723DBF95F00C90A20 /* TransactionEntry+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

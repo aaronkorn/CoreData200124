@@ -19,6 +19,7 @@ extension Journal {
 
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
+    @NSManaged public var date: Date?
     @NSManaged public var icon: Icon?
     @NSManaged public var transactionEntries: NSSet?
     @NSManaged public var budgets: NSSet?

@@ -42,6 +42,7 @@
         <relationship name="transactions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transaction" inverseName="icon" inverseEntity="Transaction"/>
     </entity>
     <entity name="Journal" representedClassName="Journal" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="budgets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Budget" inverseName="journal" inverseEntity="Budget"/>
@@ -99,7 +100,7 @@
         <element name="TransactionEntry" positionX="-218.37890625" positionY="190.65625" width="128" height="148"/>
         <element name="Account" positionX="-888.1796875" positionY="211.453125" width="128" height="103"/>
         <element name="Budget" positionX="-1041.73828125" positionY="-0.57421875" width="128" height="193"/>
-        <element name="Journal" positionX="-405.04296875" positionY="-108.40234375" width="128" height="118"/>
+        <element name="Journal" positionX="-405.04296875" positionY="-108.40234375" width="128" height="133"/>
         <element name="Icon" positionX="-624.87109375" positionY="-43.8359375" width="128" height="193"/>
         <element name="Payment" positionX="-402.6796875" positionY="227.125" width="128" height="148"/>
     </elements>
