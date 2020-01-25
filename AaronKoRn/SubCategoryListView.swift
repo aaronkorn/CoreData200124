@@ -4,7 +4,6 @@
 //
 //  Created by AARON KORN on 1/24/20.
 //  Copyright © 2020 Aaron KoRn. All rights reserved.
-//
 
 import SwiftUI
 
@@ -14,35 +13,34 @@ struct SubCategoryListView: View {
   let parentCategory : Category
   
   var body: some View {
-    NavigationView {
+    
+    List {
       
-      List {
+      Section(header: Text("Hello, World 😎 \(parentCategory.childrenArray.count)")) {
         
-        Section(header: Text("Hello, World 😎 \(parentCategory.childrenArray.count)")) {
+        ForEach (parentCategory.childrenArray, id: \.id) { oneCategory in
           
-          ForEach (parentCategory.childrenArray, id: \.id) { oneCategory in
+          NavigationLink(destination: SubCategoryListView(parentCategory: oneCategory)) {
             
-            NavigationLink(destination: SubCategoryListView(parentCategory: oneCategory)) {
-              HStack {
-                
-                Text("\(oneCategory.name ?? "[name]")")
-                
-                Text("\(oneCategory.date?.description ?? "[date]")")
-                
-              }//HStack
-            }//NavigationLink
-            
-          }//ForEach
-            .onDelete(perform: removeCategory)
+            HStack {
+              
+              Text("\(oneCategory.name ?? "[name]")")
+              
+              Text("\(oneCategory.date?.description ?? "[date]")")
+              
+            }//HStack
+          }//NavigationLink
           
-        }//Section
+        }//ForEach
+          .onDelete(perform: removeCategory)
         
-      }//List
-        .navigationBarTitle("Sub Category List")
-        .navigationBarItems(trailing: EditButton())
+      }//Section
       
-    }//NavigationView
+    }//List
+      .navigationBarTitle("Sub Category List")
+      .navigationBarItems(trailing: EditButton())
       .onAppear(perform: actionCategory)
+    
   }//body
   
   /// Aaron KoRn (c) 2020
