@@ -11,6 +11,6 @@ import Foundation
 import CoreData
 
 @objc(Payment)
-public class Payment: NSManagedObject {
+public class Payment: NSManagedObject, Identifiable {
 
 }

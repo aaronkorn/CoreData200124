@@ -18,7 +18,7 @@ struct SubCategoryListView: View {
       
       Section(header: Text("Hello, World 😎 \(parentCategory.childrenArray.count)")) {
         
-        ForEach (parentCategory.childrenArray, id: \.id) { oneCategory in
+        ForEach (parentCategory.childrenArray) { oneCategory in
           
           NavigationLink(destination: SubCategoryListView(parentCategory: oneCategory)) {
             

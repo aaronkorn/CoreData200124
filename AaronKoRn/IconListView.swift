@@ -33,7 +33,7 @@ struct IconListView: View {
       
       Section(header: Text("How many? \(coreDataIcon.count)")) {
         
-        ForEach (coreDataIcon, id: \.id) { oneIcon in
+        ForEach (coreDataIcon) { oneIcon in
           
           HStack {
 

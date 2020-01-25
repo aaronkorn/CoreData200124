@@ -23,7 +23,7 @@ struct TransactionListView: View {
         
         Section(header: Text("Hello, World 😎 \(coreDataTransaction.count)")) {
           
-          ForEach (coreDataTransaction, id: \.id) { oneTransaction in
+          ForEach (coreDataTransaction) { oneTransaction in
             
             HStack {
               

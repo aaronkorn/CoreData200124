@@ -11,6 +11,6 @@ import Foundation
 import CoreData
 
 @objc(Budget)
-public class Budget: NSManagedObject {
+public class Budget: NSManagedObject, Identifiable {
   
 }

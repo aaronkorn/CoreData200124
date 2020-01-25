@@ -23,7 +23,7 @@ struct CategoryListView: View {
         
         Section(header: Text("Hello, World 😎 \(coreDataCategory.count)")) {
           
-          ForEach (coreDataCategory, id: \.id) { oneCategory in
+          ForEach (coreDataCategory) { oneCategory in
             
             NavigationLink(destination: SubCategoryListView(parentCategory: oneCategory)) {
               HStack {

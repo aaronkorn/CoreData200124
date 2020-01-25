@@ -22,7 +22,7 @@ struct JournalListView: View {
       
       Section(header: Text("Hello, World 😎 \(coreDataJournal.count)")) {
         
-        ForEach (coreDataJournal, id: \.id) { oneJournal in
+        ForEach (coreDataJournal) { oneJournal in
           
           HStack {
             

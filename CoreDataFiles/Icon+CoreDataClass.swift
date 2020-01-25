@@ -11,6 +11,6 @@ import Foundation
 import CoreData
 
 @objc(Icon)
-public class Icon: NSManagedObject {
+public class Icon: NSManagedObject, Identifiable {
 
 }//Icon

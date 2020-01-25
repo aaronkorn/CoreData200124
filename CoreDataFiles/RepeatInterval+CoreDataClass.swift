@@ -11,6 +11,6 @@ import Foundation
 import CoreData
 
 @objc(RepeatInterval)
-public class RepeatInterval: NSManagedObject {
+public class RepeatInterval: NSManagedObject, Identifiable {
 
 }

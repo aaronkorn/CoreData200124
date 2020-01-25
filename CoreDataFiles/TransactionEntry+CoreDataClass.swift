@@ -11,6 +11,6 @@ import Foundation
 import CoreData
 
 @objc(TransactionEntry)
-public class TransactionEntry: NSManagedObject {
+public class TransactionEntry: NSManagedObject, Identifiable {
 
 }

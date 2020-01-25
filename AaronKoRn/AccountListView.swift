@@ -23,7 +23,7 @@ struct AccountListView: View {
         
         Section(header: Text("Hello, World 😎 \(coreDataAccount.count)")) {
           
-          ForEach (coreDataAccount, id: \.id) { oneAccount in
+          ForEach (coreDataAccount) { oneAccount in
             
             HStack {
               

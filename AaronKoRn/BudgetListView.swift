@@ -23,7 +23,7 @@ struct BudgetListView: View {
         
         Section(header: Text("Hello, World 😎 \(coreDataBudget.count)")) {
           
-          ForEach (coreDataBudget, id: \.id) { oneBudget in
+          ForEach (coreDataBudget) { oneBudget in
             
             HStack {
               
