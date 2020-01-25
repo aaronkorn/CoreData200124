@@ -37,6 +37,7 @@
 		8113544B23DC20CE00C90A20 /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113544923DC20CE00C90A20 /* Transaction+CoreDataProperties.swift */; };
 		8113544E23DC21EB00C90A20 /* Icon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113544C23DC21EB00C90A20 /* Icon+CoreDataClass.swift */; };
 		8113544F23DC21EB00C90A20 /* Icon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113544D23DC21EB00C90A20 /* Icon+CoreDataProperties.swift */; };
+		8113545123DC25A300C90A20 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113545023DC25A300C90A20 /* TransactionListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		8113544923DC20CE00C90A20 /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8113544C23DC21EB00C90A20 /* Icon+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Icon+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8113544D23DC21EB00C90A20 /* Icon+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Icon+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8113545023DC25A300C90A20 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				8113543523DBFAA900C90A20 /* JournalListView.swift */,
+				8113545023DC25A300C90A20 /* TransactionListView.swift */,
 				8113544523DC198000C90A20 /* AccountListView.swift */,
 				8113544323DC136E00C90A20 /* BudgetListView.swift */,
 				8113543F23DC0C2500C90A20 /* CategoryListView.swift */,
@@ -239,6 +242,7 @@
 				8113542F23DBF95F00C90A20 /* Category+CoreDataProperties.swift in Sources */,
 				8113543D23DC007A00C90A20 /* Journal+CoreDataClass.swift in Sources */,
 				8113543123DBF95F00C90A20 /* Account+CoreDataProperties.swift in Sources */,
+				8113545123DC25A300C90A20 /* TransactionListView.swift in Sources */,
 				8113544B23DC20CE00C90A20 /* Transaction+CoreDataProperties.swift in Sources */,
 				8113544023DC0C2500C90A20 /* CategoryListView.swift in Sources */,
 				8113542E23DBF95F00C90A20 /* Category+CoreDataClass.swift in Sources */,
