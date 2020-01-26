@@ -79,3 +79,9 @@ struct CategoryListView_Previews: PreviewProvider {
     CategoryListView()
   }
 }//CategoryListView_Previews
+
+// Feature Requests
+
+// Search bar
+
+// History of relatable expenses, maybe a Bill Class

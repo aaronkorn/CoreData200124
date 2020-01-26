@@ -20,7 +20,18 @@ struct JournalListView: View {
     
     List {
       
-      Section(header: Text("Hello, World 😎 \(coreDataJournal.count)")) {
+      Section(header: Text("Hello, World 😎")) {
+        
+        NavigationLink(destination: AddEntryView()) {
+          
+          Image(systemName: "plus.circle.fill")
+          Text("Add Journal")
+          
+        }//NavigationLink
+        
+      }//Section
+      
+      Section(header: Text("How many? \(coreDataJournal.count)")) {
         
         ForEach (coreDataJournal) { oneJournal in
           

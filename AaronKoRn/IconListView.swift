@@ -28,7 +28,7 @@ struct IconListView: View {
           Text("Add Icon")
           
         }//NavigationLink
-
+        
       }//Section
       
       Section(header: Text("How many? \(coreDataIcon.count)")) {
@@ -36,8 +36,9 @@ struct IconListView: View {
         ForEach (coreDataIcon) { oneIcon in
           
           HStack {
-
+            
             Image(systemName: "\(oneIcon.wrappedIcon)")
+              .font(.title)
             
             Text("\(oneIcon.name ?? "[name]")")
             
