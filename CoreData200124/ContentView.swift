@@ -5,7 +5,9 @@
 //  Created by AARON KORN on 1/24/20.
 //  Copyright © 2020 Aaron KoRn. All rights reserved.
 //
-//  Tinkering with new core data schema
+//  Tinkering with new Core Data and SwiftUI
+//
+//  1/15/20: Not bad... taking a break
 
 import SwiftUI
 
@@ -57,3 +59,9 @@ struct ContentView_Previews: PreviewProvider {
     ContentView()
   }
 }//ContentView_Previews
+
+// Feature Requests
+
+// Search bar
+
+// History of relatable expenses, maybe a Bill Class
