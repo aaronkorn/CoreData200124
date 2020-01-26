@@ -26,6 +26,15 @@ extension Payment {
   @NSManaged public var transaction: Transaction?
   
   /// Aaron KoRn (c) 2020
+  public var wrappedIcon: String {
+    if let wrappedIcon = self.icon {
+      return wrappedIcon.wrappedName
+    } else {
+      return "ant.circle.fill"
+    }
+  }//wrappedIcon
+  
+  /// Aaron KoRn (c) 2020
   public var wrappedName: String {
     name ?? "[name]"
   }//wrappedName

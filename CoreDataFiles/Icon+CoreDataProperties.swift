@@ -32,7 +32,7 @@ extension Icon {
   /// Aaron KoRn (c) 2020
   public var wrappedIcon: String {
     name ?? "ant.circle.fill"
-  }//wrappedName
+  }//wrappedIcon
 
   /// Aaron KoRn (c) 2020
   public var wrappedName: String {

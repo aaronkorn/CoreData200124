@@ -22,7 +22,7 @@ struct JournalListView: View {
       
       Section(header: Text("Hello, World 😎")) {
         
-        NavigationLink(destination: AddEntryView()) {
+        NavigationLink(destination: AddJournalView()) {
           
           Image(systemName: "plus.circle.fill")
           Text("Add Journal")
@@ -37,9 +37,14 @@ struct JournalListView: View {
           
           HStack {
             
+            Image(systemName: "\(oneJournal.wrappedIcon)")
+              .font(.title)
+
             Text("\(oneJournal.name ?? "[name]")")
             
-            Text("\(oneJournal.date?.description ?? "[date]")")
+            Spacer()
+            
+            Text("\(oneJournal.wrappedDate)")
             
           }//HStack
           
