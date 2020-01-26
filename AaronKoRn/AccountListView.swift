@@ -21,7 +21,18 @@ struct AccountListView: View {
       
       List {
         
-        Section(header: Text("Hello, World 😎 \(coreDataAccount.count)")) {
+        Section(header: Text("Hello, World 😎")) {
+          
+          NavigationLink(destination: AddAccountView()) {
+            
+            Image(systemName: "plus.circle.fill")
+            Text("Add Account")
+            
+          }//NavigationLink
+          
+        }//Section
+        
+        Section(header: Text("How many? \(coreDataAccount.count)")) {
           
           ForEach (coreDataAccount) { oneAccount in
             
