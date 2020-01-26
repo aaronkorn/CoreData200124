@@ -38,9 +38,13 @@ struct AccountListView: View {
             
             HStack {
               
+              Image(systemName: oneAccount.wrappedIcon)
+              
               Text("\(oneAccount.name ?? "[name]")")
               
-              Text("\(oneAccount.date?.description ?? "[date]")")
+              Spacer()
+              
+              Text("\(oneAccount.wrappedDate)")
               
             }//HStack
             
